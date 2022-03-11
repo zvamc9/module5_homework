@@ -1,29 +1,12 @@
-let i = prompt ("input");
- i = +i;
-  alert (typeof i);
-if (i% 2 ===0) {
-  alert ("четное");
-}
-else if (i%1 ===0) {
-  alert ("нечетное");
-}
-else {
-  alert("Упс, кажется вы ошиблись")
-}
-if (i > 0)
-  alert(true)
-else if (i < 0)
-  alert(false )
-else
-  alert(false)
-
-NaN === NaN; // => false
-
-const someNumber = NaN;
-
-if (someNumber !== someNumber) {  console.log('Is NaN');
+const value = +inputValue;
+  if(typeof value == "number" && !isNaN(value)){
+  if(value == 0) {
+    console.log('ноль')
+} else if (value % 2 == 0){
+    console.log('чётное')
 } else {
-console.log('Is Not NaN');
+    console.log('нечётное')
 }
-// logs "Is NaN"
-
+} else {
+    console.log('Упс, кажется, вы ошиблись')
+}
